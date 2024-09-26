@@ -2,7 +2,7 @@
   "name": "sneakers",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://evanstcom.github.io/sneakers",
+  "homepage": "https://evanstcom.github.io/sneakers/",
   "type": "module",
   "scripts": {
     "dev": "vite",
