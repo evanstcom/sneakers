@@ -15,8 +15,8 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/favorites', name: 'Favorites', component: Favorites },
   { path: '/orders', name: 'Orders', component: Orders },
-  { path: '/map', name: 'Map', component: Map }
-  /*   {
+  { path: '/map', name: 'Map', component: Map },
+  {
     path: '/404',
     name: 'NotFound',
     component: NotFound
@@ -24,7 +24,7 @@ const routes = [
   {
     path: '/:catchAll(.*)',
     redirect: '404'
-  } */
+  }
 ]
 const router = createRouter({
   history: createWebHistory(),
