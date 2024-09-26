@@ -43,14 +43,14 @@ const createOrder = async () => {
       v-if="orderId"
       title="Order is Done"
       :description="`Thank you for your order! Your order ${orderId}`"
-      image-url="/order-success-icon.png"
+      image-url="order-success-icon.png"
       class="flex h-full items-center"
     />
     <InfoBlock
       v-if="!totalPrice && !orderId"
       title="The Cart is Empty"
       description="Please add any sneakers to the cart"
-      image-url="/package-icon.png"
+      image-url="package-icon.png"
       class="flex h-full items-center"
     />
     <CartItemList v-if="totalPrice" />

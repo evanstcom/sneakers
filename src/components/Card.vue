@@ -10,7 +10,7 @@
           ? 'absolute top-8 left-8 cursor-pointer'
           : 'absolute top-8 left-8 cursor-pointer opacity-50 hover:opacity-100 transition'
       "
-      :src="isFavorite ? '/like-2.svg' : '/like-1.svg'"
+      :src="isFavorite ? 'like-2.svg' : 'like-1.svg'"
       alt="like"
       @click="onCkickFavorite"
     />
@@ -24,7 +24,7 @@
       <img
         v-if="showButtons"
         @click="onClickAdd"
-        :src="isAdded ? '/checked.svg' : '/plus.svg'"
+        :src="isAdded ? 'checked.svg' : 'plus.svg'"
         alt="plus"
         :class="
           isAdded
