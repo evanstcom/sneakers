@@ -7,11 +7,13 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), vueJsx()],
-  base: '/sneakers/',
+  /*   base: '/sneakers/',
+  define: {
+    'process.env.BASE_URL': JSON.stringify('/sneakers/')
+  }, */
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      vue: 'vue/dist/vue.esm-bundler.js'
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
 })

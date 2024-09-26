@@ -55,7 +55,7 @@ const getCity = async () => {
   const ip = await getIp()
   try {
     const { data } = await axios.get(
-      `http://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}`,
+      `https://suggestions.dadata.ru/suggestions/api/4_1/rs/iplocate/address?ip=${ip}`,
       {
         headers: {
           'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const getAddress = async () => {
   }
   try {
     const { data } = await axios.post(
-      'http://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address',
+      'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address',
       location,
       {
         headers: {
